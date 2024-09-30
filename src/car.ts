@@ -2,16 +2,16 @@ class Car {
     brand: string
     speed: number
 
-    constructor(brand: string, speed: string) {
-        this.brand = Brand
-        this.speed = Speed
+    constructor(brand: string, speed: number) {
+        this.brand = brand
+        this.speed = speed
     }
 
-    accelerate(): void {
+    accelerate(newSpeed: number): number {
         this.speed = 20
-        return speed
+        return this.speed + newSpeed
     }
 }
 
 const car = new Car('Toyota', 100)
-console.log(car.accelerate()) // After fixing: will print 120
+console.log(car.accelerate(100)) // After fixing: will print 120

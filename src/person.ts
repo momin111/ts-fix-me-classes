@@ -2,17 +2,17 @@ class Person {
     name: string
     age: number
 
-    constructor(name: string, age: string) {
-        this.Name = name
+    constructor(name: string, age: number) {
+        this.name = name
         this.age = age
     }
 
     getName(): string {
-        return this.Name
+        return this.name
     }
 
     getAge(): number {
-        return age
+        return this.age
     }
 }
 
